@@ -1,4 +1,6 @@
 <template>
+  <v-card> 
+    <v-card-title  class="text-left" > JOURNEY</v-card-title>
     <v-timeline align="start">
       <v-timeline-item
         v-for="(year, i) in years"
@@ -22,6 +24,7 @@
         </div>
       </v-timeline-item>
     </v-timeline>
+  </v-card>
   </template>
   <script>
     export default {
@@ -51,3 +54,9 @@
       }),
     }
   </script>
+  <style scoped>
+  
+.capitalize {
+  text-transform: capitalize;
+}
+  </style>
