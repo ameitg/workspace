@@ -1,7 +1,7 @@
 <template>
   <v-card> 
     <v-card-title  class="text-left" > JOURNEY</v-card-title>
-    <v-timeline align="start">
+    <v-timeline align="start" reverse>
       <v-timeline-item
         v-for="(year, i) in years"
         :key="i"
@@ -15,11 +15,11 @@
           ></div>
         </template>
         <div>
-          <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
+          <!-- <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
             Lorem ipsum
-          </h2>
+          </h2> -->
           <div>
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+            {{year.experince}}
           </div>
         </div>
       </v-timeline-item>
@@ -32,24 +32,24 @@
         years: [
           {
             color: 'cyan',
-            year: '1960',
+            year: '2005',
+            experince:"CAD Engineer"
           },
           {
             color: 'green',
-            year: '1970',
+            year: '2014',
+            experince:"CAD Engineer"
           },
           {
             color: 'pink',
-            year: '1980',
+            year: '2018',
+            experince:"CAD Engineer"
           },
           {
             color: 'amber',
-            year: '1990',
-          },
-          {
-            color: 'orange',
-            year: '2000',
-          },
+            year: '2021',
+            experince:"CAD Engineer"
+          }
         ],
       }),
     }
