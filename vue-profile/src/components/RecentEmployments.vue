@@ -40,7 +40,7 @@
 
 <v-expansion-panel class="text-left">
     <v-expansion-panel-title class="h3">
-      Co-founder and Solution Architect | Crisptag Technologies Private Limited | May 2018 – Oct 2021, Noida, India 
+      Co-founder and Solution Architect | Crisptag Technologies Private Limited | <span class="text-right">  May 2018 – Oct 2021, Noida, India </span>
   </v-expansion-panel-title>
   <v-expansion-panel-text>
 
@@ -59,9 +59,12 @@
 </v-card>
 </template>
 <style scoped>
+.text-right {
+  float:right;
+}
 .h3 {
   text-transform: capitalize;
   font-weight:bold;
-  font-size:larger
+  /* font-size:larger */
 }
 </style>

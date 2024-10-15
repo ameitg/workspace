@@ -19,7 +19,9 @@ class="text-left"
     item-key="skills"
     items-per-page="-1"
     :search="search"
-  ></v-data-table>
+  ><template v-slot:item.name="{ item }">
+      <td class="first-column">{{ item.name }}</td>
+    </template></v-data-table>
   </v-card>
 </template>
 
@@ -128,6 +130,11 @@ export default {
 </script>
 
 <style scoped>
+.first-column {
+  /* Add your custom styles here */
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
 .v-card-title {
   font-weight: bold;
 }
